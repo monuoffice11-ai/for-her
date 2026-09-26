@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sirf Tumhare Liye... ❤️</title>
+<style>
+body {
+background-color: #ffe6e6; /* क्यूट पिंक बैकग्राउंड */
+text-align: center;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin-top: 20%;
+}
+#message-box { display: none; }
+h1 { color: #ff4d4d; font-size: 40px;}
+p { font-size: 22px; color: #555; line-height: 1.6; }
+.btn {
+background-color: #ff4d4d;
+color: white;
+padding: 15px 35px;
+font-size: 20px;
+border: none;
+border-radius: 30px;
+cursor: pointer;
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+transition: 0.3s;
+}
+.btn:hover { background-color: #e60000; transform: scale(1.05); }
+</style>
+</head>
+<body>
+​<!-- पहला पेज जो उसे दिखेगा -->
+<div id="start-box">
+<h2>मुझसे बात नहीं करनी, कोई बात नहीं... 
+पर तुम्हारे लिए एक छोटी सी चीज़ है 🥺</h2>
+
+
+<button class="btn" onclick="revealMessage()">यहाँ क्लिक करो</button>
+</div>
+​<!-- बटन क्लिक करने के बाद जो दिखेगा -->
+<div id="message-box">
+<h1>मेरी ही गलती थी! 🙈</h1>
+<p>मैं जानता हूँ मैं कभी-कभी बहुत बड़ी बेवकूफी कर देता हूँ। 
+
+लेकिन मैं सच में तुम्हें दुखी नहीं करना चाहता था।
+
+क्या तुम अपने इस <b>'पागल, बेवकूफ और दुश्मन'</b> की गलती भूलकर एक स्माइल करोगी?</p>
+<p>❤️❤️❤️</p>
+​<!-- बैकग्राउंड म्यूजिक -->
+<audio id="myAudio" loop>
+<source src="song.mp3.mp3" type="audio/mpeg">
+</audio>
+</div>
+​<script>
+function revealMessage() {
+document.getElementById('start-box').style.display = 'none';
+document.getElementById('message-box').style.display = 'block';
+document.getElementById('myAudio').play(); // बटन पर क्लिक करते ही गाना बजना शुरू होगा
+}
+</script>
+​</body>
+</html>
